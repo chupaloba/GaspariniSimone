@@ -15,9 +15,9 @@ public class EliminaPolizza
 		return elementi;
 	}
 	
-	private Nodo creaNodo(AggiungiPolizza persona, Nodo link)
+	private Nodo creaNodo(AggiungiPolizza polizza, Nodo link)
 	{
-		Nodo nodo=new Nodo(persona);
+		Nodo nodo=new Nodo(polizza);
 		nodo.setLink(link);
 		return nodo;
 	}
@@ -55,32 +55,32 @@ public class EliminaPolizza
 	}
 	
 	
-	public void inserisciInTesta(AggiungiPolizza persona)
+	public void inserisciInTesta(AggiungiPolizza polizza)
 	{
-		Nodo p=creaNodo(persona, head);
+		Nodo p=creaNodo(polizza, head);
 		head=p;
 		elementi++;
 	}
 	
-	public void inserisciInCoda(AggiungiPolizza persona) throws PolizzaException
+	public void inserisciInCoda(AggiungiPolizza polizza) throws PolizzaException
 	{
 		if(elementi==0)
 		{
-			inserisciInTesta(persona);
+			inserisciInTesta(polizza);
 			return;
 		}
 		
-		Nodo pn=creaNodo(persona, null);
+		Nodo pn=creaNodo(polizza, null);
 		Nodo p=getLinkPosizione(elementi);
 		p.setLink(pn);
 		elementi++;
 	}
 	
-	void inserisciInposizione(AggiungiPolizza persona, int posizione) throws PolizzaException
+	void inserisciInPosizione(AggiungiPolizza polizza, int posizione) throws PolizzaException
 	{	
 		if(posizione==1)
 		{
-			inserisciInTesta(persona);
+			inserisciInTesta(polizza);
 			return;
 		}
 		if (posizione<=0 || posizione>elementi+1)
@@ -88,11 +88,11 @@ public class EliminaPolizza
 		
 		if (posizione==elementi+1)
 		{
-			inserisciInCoda(persona);
+			inserisciInCoda(polizza);
 			return;
 		}
 		
-		Nodo pn=creaNodo(persona, getLinkPosizione(posizione));
+		Nodo pn=creaNodo(polizza, getLinkPosizione(posizione));
 		Nodo precedente=getLinkPosizione(posizione-1);
 		precedente.setLink(pn);
 		elementi++;	

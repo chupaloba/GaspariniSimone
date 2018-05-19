@@ -1,7 +1,6 @@
 
 public class Nodo 
 {
-
 	private AggiungiPolizza info;
 	private Nodo link;
 	

@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 public class AggiungiPolizza 
 {	
 	private int codice;
@@ -6,6 +8,15 @@ public class AggiungiPolizza
 	private String targa;
 	private int cilindrata;
 	private boolean pagamento;
+	private double quota=0.5;
+
+	public double getQuota() {
+		return quota;
+	}
+
+	public void setQuota(double quota2) {
+		this.quota = quota2;
+	}
 
 	public int getCodice() {
 	return codice;
@@ -79,4 +90,34 @@ public void setPagamento(boolean pagamento) {
 	{
 		return (getCodice()+" "+getNome()+" "+getCognome()+" "+getTarga()+" "+getCilindrata()+" "+isPagamento());
 	}
-}
+	
+	public String CalcolaQuota(double cilindrata,double quota)
+	{
+		cilindrata=cilindrata*quota;
+		return ("La quota da pagare è: "+getCilindrata());
+		}
+	
+	public class SalvaSuFile implements Serializable
+	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		public SalvaSuFile (int codice, String nome, String cognome, String targa, int cilindrata, boolean pagamento, double quota)
+		{
+			setCodice(codice);
+			setNome(nome);
+			setCognome(cognome);
+			setTarga(targa);
+			setCilindrata(cilindrata);
+			setPagamento(pagamento);
+			setQuota(quota);
+		}
+		
+		public String toString()
+		{
+			return (codice+" "+nome+" "+cognome+" "+targa);
+		}
+	}
+	}
