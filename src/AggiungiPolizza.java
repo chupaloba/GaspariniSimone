@@ -87,11 +87,11 @@ public void setPagamento(boolean pagamento) {
 	}
 
 	public String toString()
-	{
+	{ 
 		return (getCodice()+" "+getNome()+" "+getCognome()+" "+getTarga()+" "+getCilindrata()+" "+isPagamento());
 	}
 	
-	public String CalcolaQuota(double cilindrata,double quota)
+	public String CalcolaQuota(double cilindrata,double quota)      
 	{
 		cilindrata=cilindrata*quota;
 		return ("La quota da pagare è: "+getCilindrata());

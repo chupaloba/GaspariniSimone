@@ -11,7 +11,7 @@ public class Nodo
 	}
 
 	public AggiungiPolizza getInfo() {
-		return info;
+		return info; 
 	}
 
 	public void setInfo(AggiungiPolizza info) 

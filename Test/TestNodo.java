@@ -26,7 +26,7 @@ public class TestNodo
 	@Test
 	public void testSetLink() 
 	{
-		AggiungiPolizza p1=new AggiungiPolizza();
+		AggiungiPolizza p1=new AggiungiPolizza();  
 		AggiungiPolizza p2=new AggiungiPolizza();
 		Nodo n1=new Nodo(p1);
 		Nodo n2=new Nodo(p2);

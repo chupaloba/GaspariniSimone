@@ -54,7 +54,6 @@ public class EliminaPolizza
 		return risultato;
 	}
 	
-	
 	public void inserisciInTesta(AggiungiPolizza polizza)
 	{
 		Nodo p=creaNodo(polizza, head);

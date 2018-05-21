@@ -10,7 +10,6 @@ public class OrdinatoreAlfabetico
 		array[pos2]=s;
 		return 0;
 	}
-
 		public static int  scambia(String[] array, int pos1, int pos2)
 		{
 			String s;
@@ -22,7 +21,6 @@ public class OrdinatoreAlfabetico
 			return 0;
 		}
 		
-
 	public static int[] copia(int[] array)
 	{
 		int[] arrayCopia=new int[array.length];
