@@ -66,7 +66,7 @@ public void setPagamento(boolean pagamento) {
 	this.pagamento = pagamento;
 }
 
-	public AggiungiPolizza(int codice, String nome, String cognome, int cilindrata, boolean pagamento)
+	public AggiungiPolizza()
 	{
 		setCodice(codice);
 		setNome(nome);
