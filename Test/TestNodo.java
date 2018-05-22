@@ -4,7 +4,6 @@ import org.junit.Test;
 
 public class TestNodo 
 {
-
 	@Test
 	public void testCostruttoreNodo() 
 	{
@@ -33,6 +32,5 @@ public class TestNodo
 		n1.setLink(n2);
 		assertTrue("setLink",n1.getInfo().equals(p1)&&n1.getLink()==n2);
 	}
-
 }
 	

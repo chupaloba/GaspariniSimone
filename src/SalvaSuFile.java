@@ -8,7 +8,6 @@ import java.io.ObjectOutputStream;
 
 public class SalvaSuFile 
 {
-
 	public static void main(String[] args) 
 	{
 		SalvaSuFile p1=new SalvaSuFile();
@@ -18,7 +17,6 @@ public class SalvaSuFile
 		String indirizzo1="via x";
 		String indirizzo2="via y";
 		String indirizzo3= "via z";
-		
 		
 		try 
 		{
@@ -48,7 +46,6 @@ public class SalvaSuFile
 			e.printStackTrace();
 		}
 		
-		
 		FileInputStream file2 = null;
 		SalvaSuFile p;
 		String indirizzo;
@@ -63,8 +60,7 @@ public class SalvaSuFile
 				p=(SalvaSuFile)reader.readObject();
 				indirizzo=(String)reader.readObject();
 				System.out.println(p+" "+indirizzo);
-			}
-			
+			}	
 		} 
 		catch (EOFException e)
 		{

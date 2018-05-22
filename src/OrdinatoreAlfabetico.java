@@ -38,8 +38,7 @@ public class OrdinatoreAlfabetico
 		
 		return arrayCopia;
 	}
-
-		
+	
 	public static int[] selectionSortCrescente(int[] array)
 	{
 		int[] arrayOrdinato=copia(array);
@@ -70,7 +69,6 @@ public class OrdinatoreAlfabetico
 		return arrayOrdinato;
 	}
 	
-
 	public static int[] selectionSortDecrescente(int[] array)
 	{
 		int[] arrayOrdinato=copia(array);
@@ -86,7 +84,6 @@ public class OrdinatoreAlfabetico
 		return arrayOrdinato;
 	}
 	
-
 		public static String[] selectionSortDecrescente(String[] array)
 		{
 			String[] arrayOrdinato=copia(array);

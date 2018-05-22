@@ -120,4 +120,4 @@ public void setPagamento(boolean pagamento) {
 			return (codice+" "+nome+" "+cognome+" "+targa);
 		}
 	}
-	}
+}
